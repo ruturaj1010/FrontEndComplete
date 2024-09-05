@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* .car1 {
+    width: 90px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+}
+
+.car2 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(226, 180, 42);
+    position: absolute;
+}
+
+.car3 {
+    width: 60px;
+    height: 100px;
+    background-color: rgb(49, 170, 189);
+    position: absolute;
+} */
+
+/* psudeo elements in css */
+
+
+/* p {
+    width: fit-content;
+    background-color: orange;
+    position: relative;
+} */
+
+/* p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(39, 12, 196);
+} */
+/* p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(39, 12, 196);
+} */
+
+h1::first-line {
+    color: red;
+    font-size: larger;
+}
+
+h1::first-letter {
+    color: blueviolet;
+}
+
+h1::selection {
+    color: brown;
+}
+
+button:active {
+    background-color: red;
+}
+
+input:focus {
+    background-color: red;
+}
+
+p:nth-child(2n) {
+    color: rgb(210, 65, 65);
+}
