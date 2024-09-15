@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import React from 'react'
+import Navbar from './components/Navbar'
+import Routing from './Utils/Routing'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App () {
 
   return (
     <>
-      <nav className='container mx-auto bg-red-500'>heyy</nav>
+      <Navbar />
+      <Routing />
     </>
   )
 }
