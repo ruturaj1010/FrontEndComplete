@@ -7,7 +7,7 @@ const Navbar = () => {
             <NavLink style={ ( e ) => {
                 return {
                     color: e.isActive ? "blue" : "",
-                    fontSize: e.isActive ? "24px" : "",
+                    fontSize: e.isActive ? "18px" : "",
                     textDecoration: e.isActive ? "underline" : ""
                 }
             } } to="/">Home</NavLink>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <NavLink style={ ( e ) => {
                 return {
                     color: e.isActive ? "blue" : "",
-                    fontSize: e.isActive ? "24px" : "",
+                    fontSize: e.isActive ? "18px" : "",
                     textDecoration: e.isActive ? "underline" : ""
                 }
             } } to="/user">User</NavLink>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink className={ ( e ) => {
                 return [
                     e.isActive ? "text-blue-500" : "",
-                    e.isActive ? "text-2xl font-semibold " : "",
+                    e.isActive ? "font-semibold " : "",
                     e.isActive ? "underline" : ""
                 ].join(" ") 
             } } to="/about">About</NavLink>
