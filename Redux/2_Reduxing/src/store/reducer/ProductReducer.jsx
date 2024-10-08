@@ -1,15 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    products : ["https://fakestoreapi.com/products"]
+    products : []
 }
 
 export const productSlice = createSlice( {
     name: "products",
     initialState,
-    reducers: {},
+    reducers: {
+        getProducts: (state , action ) => {
+            console.log(action);
+            state.products = action.payload
+        }
+    },
 })
 
 export default productSlice.reducer;
 
-export const {} = productSlice.actions;
+export const { getProducts } = productSlice.actions;
